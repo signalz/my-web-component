@@ -1,0 +1,43 @@
+{
+  "name": "custom-elements",
+  "version": "0.0.1",
+  "description": "Custom elements",
+  "main": "index.js",
+  "scripts": {
+    "build": "rimraf ./dist && vite build --mode production",
+    "build:dev": "rimraf ./dist && vite build --mode dev",
+    "build:staging": "rimraf ./dist && vite build --mode staging",
+    "dev": "vite --host --mode dev",
+    "lint": "eslint \"**/*.ts\"",
+    "lint:fix": "eslint --fix \"**/*.ts\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc:init": "tsc --init"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:signalz/my-web-component.git"
+  },
+  "author": "Son Nguyen",
+  "bugs": {
+    "url": "https://github.com/signalz/my-web-component/issues"
+  },
+  "homepage": "https://github.com/signalz/my-web-component/issues#readme",
+  "dependencies": {
+    "lit": "^2.7.6"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.1",
+    "@typescript-eslint/eslint-plugin": "^6.2.1",
+    "@typescript-eslint/parser": "^6.2.1",
+    "eslint": "^8.46.0",
+    "eslint-config-airbnb-typescript": "^17.1.0",
+    "eslint-config-prettier": "^8.9.0",
+    "eslint-plugin-lit": "^1.8.3",
+    "eslint-plugin-prettier": "^5.0.0",
+    "prettier": "^3.0.0",
+    "rimraf": "^5.0.1",
+    "typescript": "^5.1.6",
+    "vite": "^4.4.2",
+    "vite-plugin-eslint": "^1.8.1"
+  }
+}
