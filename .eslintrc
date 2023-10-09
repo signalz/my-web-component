@@ -1,0 +1,16 @@
+{
+  "root": true,
+  "extends": ["plugin:lit/recommended", "airbnb-typescript", "prettier"],
+  "plugins": ["@typescript-eslint", "prettier"],
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": "latest",
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "import/extensions": 0,
+    "import/no-extraneous-dependencies": 0,
+    "react/jsx-filename-extension": 0,
+    "@typescript-eslint/no-useless-constructor": 0
+  }
+}
